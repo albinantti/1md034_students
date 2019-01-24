@@ -1,72 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>BurgerVille Burgers for Big Boys</title>
-        <link rel="stylesheet" type="text/css" href="../public/css/deli-very.css">
-        <link href="https://fonts.googleapis.com/css?family=Exo|Sarabun" rel="stylesheet">
-    </head>
+<head>
+  <title>BurgerVille Burgers for Big Boys</title>
+  <link rel="stylesheet" type="text/css" href="../public/css/deli-very.css">
+  <link href="https://fonts.googleapis.com/css?family=Exo|Sarabun" rel="stylesheet">
+</head>
 
-    <body>
-      <main>
+<body>
+  <main>
 
-          <div id="wrap" class="header_div">
+    <div id="wrap" class="header_div">
 
-            <img id="burgerheader" src="https://i.imgur.com/tpgSHHu.jpg?1" alt="Burgerville">
-            <h1 id="burgerheading">Welcome to BurgerVille</h1>
+      <img id="burgerheader" src="https://i.imgur.com/tpgSHHu.jpg?1" alt="Burgerville">
+      <h1 id="burgerheading">Welcome to BurgerVille</h1>
 
-        <section id="burgers">
+      <section id="burgers">
 
 
-            <br>
-          <h3>Select your burger</h3>
+        <br>
+        <h3>Select your burger</h3>
 
-          <div class="tablediv">
-
+        <div class="tablediv">
+          <div class="box a">
+            <h3>Burger Burger</h3>
+            <img src="https://lh3.googleusercontent.com/i-vHb3CryeDkJrTydwmJFJ1M1HrFtjAGIDC5xI7wI7bkOqV_iV0Zpr6jtm-9Lmv6n1pgkMBhJHSb2Ef1XMxLEQ=s400" alt="Burger burger"/>
+            <ul>
+              <li ><span id="bold">KCal:</span> 1000</li>
+              <li>Ingredients: Beef, Bread, Veggies</li>
+              <li>Price: 5.99 dollarydoos</li>
+            </ul>
           </div>
-          <table>
-            <thead>
-              <th><h3>Burger Burger</h3></th><th><h3>Veggie Burger</h3></th><th><h3>InvisiBurger™</h3></th>
-            </thead>
-            <tbody>
-              <tr>
-                  <td><img src="https://lh3.googleusercontent.com/i-vHb3CryeDkJrTydwmJFJ1M1HrFtjAGIDC5xI7wI7bkOqV_iV0Zpr6jtm-9Lmv6n1pgkMBhJHSb2Ef1XMxLEQ=s400" alt="Burger burger"/></td>
-                  <td><img src="http://www.oporto.co.nz/wp-content/uploads/2015/09/Veggie_burger.141612.png" alt="Veggie burger"/></td>
-                  <td><img src="https://cdn141.picsart.com/265241430020212.png?r1024x1024" alt="InvisiBurger™"/></td>
-              </tr>
-              <tr>
-                <td>
-                  <ul>
-                    <li ><span id="bold">KCal:</span> 1000</li>
-                    <li>Ingredients: Beef, Bread, Veggies</li>
-                    <li>Price: 5.99 dollarydoos</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul>
-                    <li><span id="bold">KCal:</span> 400</li>
-                    <li>Ingredients: Bread, Veggies</li>
-                    <li>Price: 20 pence</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul>
-                    <li><span id="bold">KCal:</span> One breadsworth</li>
-                    <li>Ingredients: I mean its literally just the bread</li>
-                    <li>Price: $8.25 CAD</li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="box b">
+            <h3>Veggie Burger</h3>
+            <img src="http://www.oporto.co.nz/wp-content/uploads/2015/09/Veggie_burger.141612.png" alt="Veggie burger"/>
+            <ul>
+              <li><span id="bold">KCal:</span> 400</li>
+              <li>Ingredients: Bread, Veggies</li>
+              <li>Price: 20 pence</li>
+            </ul>
+          </div>
+          <div class="box c">
+            <h3>InvisiBurger™</h3>
+            <img src="https://cdn141.picsart.com/265241430020212.png?r1024x1024" alt="InvisiBurger" />
 
-          <br>
-        </section>
-        <section id="customer_info">
+            <ul>
+              <li><span id="bold">KCal:</span> One breadsworth</li>
+              <li>Ingredients: I mean its literally just the bread</li>
+              <li>Price: $8.25 CAD</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="customer_info">
 
-            <br>
-          <h4>Delivery information</h4>
-          <form>
-          <p>
+        <br>
+
+        <h4>Delivery information</h4>
+
+            <form>
             <label for="firstname">Full name</label><br>
             <input type="text" id="firstname" placeholder="First- and last name" name="fn" required="required"><br>
             <label for="email">E-mail</label><br>
@@ -75,6 +66,7 @@
             <input type="text" id="street" name="st" required="required" placeholder="Street name"><br>
             <label for="lastname">House number</label><br>
             <input type="number" id="house" name="hn" required="required" placeholder="House number"><br><br>
+
             Select your gender:<br>
             <label><input type="radio" name="gender" checked>Male</label><br>
             <label><input type="radio" name="gender">Female</label><br>
@@ -87,23 +79,23 @@
               <option>Dogecoin</option>
               <option>IOU letters</option>
             </select><br><br>
-          </form>
+            </form>
 
           <button type="submit"><img src="https://freeiconshop.com/wp-content/uploads/edd/burger-outline.png" height="16" width="16">Send Info</button>
 
-        </p>
+
         <br>
         <br>
-        </section>
+      </section>
 
-        <footer>
+      <footer>
 
-          <h2>© BurgerVille Ltd.</h2>
+        <h2>© BurgerVille Ltd.</h2>
 
-        </div>
-        </footer>
+      </div>
+    </footer>
 
 
-      </main>
-    </body>
+  </main>
+</body>
 </html>

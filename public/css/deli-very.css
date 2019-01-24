@@ -21,8 +21,6 @@ footer{
 	font-size: 12px;
 }
 
-td {width: 33.33%;}
-
 #wrap {
 	min-width: 1024px;
 	max-width: 1280px;
@@ -43,24 +41,33 @@ td {width: 33.33%;}
 #burgers h3 {text-align: center;}
 
 #customer_info{
-	border: 5px inset #F1F0E2;
+	align-content: center;
+	border: 5px inset #C2E7F2;
 	background-color: #3E4E59;
-	color: #F1F0E2;
+	color: #C2E7F2;
 	padding-left: 5%;
+
 }
 
-#tablediv{
+.tablediv{
 	display: grid;
-     grid-gap: 10px;
-     grid-template-columns: 100px 100px 100px;
-     background-color: #fff;
-     color: #444;
+	grid-gap: 10px;
+	padding-left: 4%;
 }
+
+.tablediv img{width: 255px; height:255px; margin: 0 auto; display:block;}
+
+ .a {grid-column: 1;}
+ .b {grid-column: 2;}
+ .c {grid-column: 3;}
+
+#burgername {width: 100%;}
 
 #burgerheading{
 	margin-top:0;
 	padding-top: 5%;
 	z-index: 0;
+	color: #F1F0E2;
 }
 
 #burgerheader{
@@ -71,18 +78,12 @@ td {width: 33.33%;}
 	width: 100%;
 	min-width: 1024px;
 	max-width: 1280px;
+	margin: 0 auto;
 }
 
 #bold{
 	font-weight: bold;
 	color:#F25652;
-}
-
-td img {
-	display: block;
-	margin: 0 auto;
-	width: 256px;
-	height: 256px;
 }
 
 button:hover {
