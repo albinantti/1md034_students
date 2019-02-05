@@ -1,0 +1,92 @@
+body {
+	background-color: #F1F0E2;
+	margin: 0 0;
+	padding-top: 0;
+	font-family: 'Sarabun', sans-serif;
+	font-size: 24px;
+}
+
+h1,h2,h3 {
+	font-family: 'Exo', sans-serif;
+}
+
+h1{
+
+	font-size:72px;
+	text-align: center;
+}
+
+footer{
+	padding-left: 2%;
+	font-size: 12px;
+}
+
+#wrap {
+	min-width: 1024px;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+#burgers{
+	color: #3E4E59;
+	border: 5px inset #3E4E59;
+	background-color: #C2E7F2;
+}
+
+#burgers table {
+	margin-left:3%;
+	margin-right: 3%;
+}
+
+#burgers h3 {text-align: center;}
+
+#customer_info{
+	align-content: center;
+	border: 5px inset #C2E7F2;
+	background-color: #3E4E59;
+	color: #C2E7F2;
+	padding-left: 5%;
+
+}
+
+.tablediv{
+	display: grid;
+	grid-gap: 10px;
+	padding-left: 4%;
+}
+
+.tablediv img{width: 255px; height:255px; margin: 0 auto; display:block;}
+
+ .a {grid-column: 1;}
+ .b {grid-column: 2;}
+ .c {grid-column: 3;}
+
+#burgername {width: 100%;}
+
+#burgerheading{
+	margin-top:0;
+	padding-top: 5%;
+	z-index: 0;
+	color: #F1F0E2;
+}
+
+#burgerheader{
+	z-index: -1;
+	position:absolute;
+	opacity:0.5;
+	margin: 0 auto;
+	width: 100%;
+	min-width: 1024px;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+#bold{
+	font-weight: bold;
+	color:#F25652;
+}
+
+button:hover {
+	cursor: pointer;
+  background-color: #D9BB93;
+}
