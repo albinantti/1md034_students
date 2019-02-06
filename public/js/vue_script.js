@@ -11,7 +11,6 @@ function MenuItem(name, ingredients, price, allergens, kcal, img) {
   };
 }
 */
-
 var vm = new Vue({
   el: '#tablediv',
   data: {

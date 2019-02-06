@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BurgerVille Burgers for Big Boys</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Exo|Sarabun" rel="stylesheet">
+  <script type="text/javascript" src="js/menu.js"></script>
+  <script src="./js/js_script.js" defer></script>
+  <!--<script src="https://vuejs.org/js/vue.js"></script>
+  <script src="./js/vue_script.js" defer></script>-->
+
+</head>
+
+<body>
+  <main>
+
+    <div id="wrap" class="header_div">
+
+      <img id="burgerheader" src="https://i.imgur.com/tpgSHHu.jpg?1" alt="Burgerville">
+      <h1 id="burgerheading">Welcome to BurgerVille</h1>
+
+      <section id="burgers">
+
+
+        <br>
+        <h3>Select your burger</h3>
+
+
+       <div id="tablediv">
+<!--
+     <div id="burgerColumn" v-for="burger in food">
+       <h4>{{burger.name}} <input type="checkbox" :id="burger.name"></h4>
+       <img :src="burger.img"/>
+        <ul >
+          <li >Price: ${{burger.price}} USD</li>
+          <li>Ingredients: {{burger.ingredients}}</li>
+          <li>kCal: {{burger.kcal}}</li>
+          <li v-if="burger.allergens.length > 0">Allergens: <span id="bold">{{burger.allergens}}</span></li>
+        </ul>
+
+     </div>
+   -->
+
+          </div>
+      </section>
+      <section id="customer_info">
+
+        <br>
+
+        <h4>Delivery information</h4>
+        <div id="orders">
+
+        <div id="customerform">
+          <form>
+            <label for="firstname">Full name</label><br>
+            <input type="text" id="firstname" placeholder="First- and last name" name="fn" required="required"><br>
+            <label for="email">E-mail</label><br>
+            <input type="email" id="email" name="em" placeholder="example@domain.com"><br>
+            <label for="street">Street</label><br>
+            <input type="text" id="street" name="st" required="required" placeholder="Street name"><br>
+            <label for="house">House number</label><br>
+            <input type="number" id="house" name="hn" required="required" placeholder="House number"><br><br>
+
+            Select your gender:<br>
+            <label><input type="radio" name="gender" id="male" checked>Male</label><br>
+            <label><input type="radio" name="gender" id="female">Female</label><br>
+            <label><input type="radio" name="gender" id="other">Other</label><br><br>
+            <label for="payment_options">Select your payment method</label><br>
+            <select id="payment_options" name="po"><br>
+              <option>Card</option>
+              <option>Cash</option>
+              <option>Invoice</option>
+              <option>Dogecoin</option>
+              <option>IOU letters</option>
+            </select><br><br>
+            </form>
+
+          <button type="submit" id="bugtton"><img src="https://freeiconshop.com/wp-content/uploads/edd/burger-outline.png" height="16" width="16">Send Info</button>
+        </div><!--
+        <div id="finishedOrder" v-if="placedorder.fn.length > 0">
+          <ul>
+            <li>Name: {{placedorder.fn}}</li>
+            <li>E-mail: {{placedorder.em}}</li>
+            <li>Address: {{placedorder.st}} {{placedorder.ho}}</li>
+            <li>Gender: {{placedorder.ge}}</li>
+            <li>Payment option: {{placedorder.po}}</li>
+            <li>Burgers selected: {{placedorder.bu}}</li>
+          </ul>
+
+
+        </div>
+      -->
+        </div>
+
+
+
+        <br>
+        <br>
+      </section>
+
+      <footer>
+
+        <h2>© BurgerVille Ltd.</h2>
+
+      </div>
+    </footer>
+
+
+  </main>
+</body>
+</html>
