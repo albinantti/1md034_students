@@ -26,18 +26,18 @@ Create an index.html file which contains:
 	- [X] House Number (only allowing numbers in this field)
 	- [X] Gender (male, female, do not wish to provide as radio buttons)
 - [X] A button to place the order
-- [ ] Ensure the website loads when opening http://localhost:3000/
+- [X] Ensure the website loads when opening http://localhost:3000/
 
 ## 03 CSS
 
 Create a style.css file which contains:
-- [ ] A rule to make the allergy information bold
-- [ ] Different text and background color for the two different sections (burger selection and customer information)
-- [ ] Change the cursor when hovering over the order button
-- [ ] Adds margins to the sections and the order button
-- [ ] Add a border to the two sections
-- [ ] Create a header that places an image behind the headline
-- [ ] Use a grid layout instead of tables for the burger selection section
+- [X] A rule to make the allergy information bold
+- [X] Different text and background color for the two different sections (burger selection and customer information)
+- [X] Change the cursor when hovering over the order button
+- [X] Adds margins to the sections and the order button
+- [X] Add a border to the two sections
+- [X] Create a header that places an image behind the headline
+- [X] Use a grid layout instead of tables for the burger selection section
 
 
 ## 04 JavaScript
@@ -55,11 +55,11 @@ Create a js_script.js file which contains:
 - [ ] A functionality for the order button that writes the information from the text boxes, the gender and all items on the order (that have the checkbox checked) to the bottom of the html file when the button is clicked
 
 Create a vue_script.js file which contains:
-- [ ] A function that loops through the array and inserts the information to the burger selection section of the index.html file
-- [ ] A function that loads the information from the menu.js json object and inserts the information to the burger selection section of the index.html file
-- [ ] Only displays allergy information if relevant (either only if it contains gluten or lactose, or only if it's gluten or lactose free)
-- [ ] Add a checkbox to each menu item
-- [ ] A functionality for the order button that writes the information from the text boxes, the gender and all items on the order (that have the checkbox checked) to the bottom of the html file when the button is clicked
+- [X] A function that loops through the array and inserts the information to the burger selection section of the index.html file
+- [X] A function that loads the information from the menu.js json object and inserts the information to the burger selection section of the index.html file
+- [X] Only displays allergy information if relevant (either only if it contains gluten or lactose, or only if it's gluten or lactose free)
+- [x] Add a checkbox to each menu item
+- [X] A functionality for the order button that writes the information from the text boxes, the gender and all items on the order (that have the checkbox checked) to the bottom of the html file when the button is clicked
 
 ## 05 Messaging
 
@@ -72,7 +72,7 @@ Create a vue_script.js file which contains:
 
 ## Optional
 - [ ] Set the orderID on client side so one customer can make multiple orders
-- [ ] Only allow the order to be sent if all necessary information are provided
+- [x] Only allow the order to be sent if all necessary information are provided
 - [ ] Display the order(s) on the customer page as well
 - [ ] Allow the dispatcher to handle orders by providing buttons next to every order that can switch the order status to "in preparation" and "done"
 - [ ] Display the order status to the customer and update it in the customer view if updated by the dispatcher
