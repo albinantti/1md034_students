@@ -5,6 +5,7 @@
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Exo|Sarabun" rel="stylesheet">
   <script type="text/javascript" src="js/menu.js"></script>
+  <script src="/socket.io/socket.io.js" defer></script>
   <script src="./js/js_script.js" defer></script>
   <script src="https://vuejs.org/js/vue.js"></script>
   <script src="./js/vue_script.js" defer></script>
@@ -46,7 +47,7 @@
         <br>
 
         <h4>Delivery information</h4>
-        <div id="orders">
+        <div id="orders2">
 
         <div id="customerform">
           <form>
@@ -54,10 +55,22 @@
             <input type="text" id="firstname" placeholder="First- and last name" name="fn" required="required"><br>
             <label for="email">E-mail</label><br>
             <input type="email" id="email" name="em" placeholder="example@domain.com"><br>
-            <label for="street">Street</label><br>
+            <h5>Address:</h5>
+            <div class="view-box">
+
+
+            <div id="dots" v-on:click="displayOrder">
+              <div v-if="this.draw"
+                v-bind:style="{ left: position.x + 'px', top: position.y + 'px'}">
+                T
+              </div>
+            </div>
+            </div>
+            <!--<label for="street">Street</label><br>
             <input type="text" id="street" name="st" required="required" placeholder="Street name"><br>
             <label for="house">House number</label><br>
-            <input type="number" id="house" name="hn" required="required" placeholder="House number"><br><br>
+            <input type="number" id="house" name="hn" required="required" placeholder="House number">-->
+            <br><br>
 
             Select your gender:<br>
             <label><input type="radio" name="gender" id="male" checked>Male</label><br>
@@ -79,10 +92,10 @@
           <ul>
             <li>Name: {{placedorder.fn}}</li>
             <li>E-mail: {{placedorder.em}}</li>
-            <li>Address: {{placedorder.st}} {{placedorder.ho}}</li>
+            <!--<li>Address: {{placedorder.st}} {{placedorder.ho}}</li>-->
             <li>Gender: {{placedorder.ge}}</li>
             <li>Payment option: {{placedorder.po}}</li>
-            <li>Burgers selected: {{placedorder.bu}}</li>
+            <li>Burgers selected: {{placedorder.bu.join(", ")}}</li>
           </ul>
 
 

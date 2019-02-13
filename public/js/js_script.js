@@ -1,16 +1,17 @@
 
 
 function getBurgers(){
-  output = "";
+  output = [];
   for(burger in food)
   {
     if(document.getElementById(food[burger].name).checked)
     {
-      output += " "+(food[burger].name);
+      output.push(food[burger].name);
     }
   }
   return output;
 }
+
 
 function getGender(){
   if(document.getElementById("male").checked)
@@ -27,22 +28,22 @@ function getGender(){
 function getFormValues(){
   var fn = document.getElementById("firstname").value;
   var email = document.getElementById("email").value;
-  var street = document.getElementById("street").value;
-  var house = document.getElementById("house").value;
+  //var street = document.getElementById("street").value;
+  //var house = document.getElementById("house").value;
   var gender = getGender();
   var bu = getBurgers();
   var po = document.getElementById("payment_options").value;
-  if(fn.length == 0 || email.length == 0 || street.length == 0 || house.length == 0)
+  if(fn.length == 0 || email.length == 0 /*|| street.length == 0 || house.length == 0*/)
   {
     alert("Please fill out all forms!");
-    return {"fn":"", "em":"", "st":"", "ho":"", "ge":"", "po":"","bu":{}};
+    return {"fn":"", "em":""/*, "st":"", "ho":""*/, "ge":"", "po":"","bu":{}};
   }
   if(bu.length == 0)
   {
     alert("Please select at least one burger!");
-    return {"fn":"", "em":"", "st":"", "ho":"", "ge":"", "po":"","bu":{}};
+    return {"fn":"", "em":"",/* "st":"", "ho":"",*/ "ge":"", "po":"","bu":{}};
   }
-  return {"fn":fn, "em":email, "st":street, "ho":house, "ge":gender, "po":po, "bu":bu};
+  return {"fn":fn, "em":email, /*"st":street, "ho":house,*/ "ge":gender, "po":po, "bu":bu};
 }
 
 
